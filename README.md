@@ -221,7 +221,72 @@ FLASK_ENV=production
 CORS_ORIGINS=https://yourdomain.com
 GOOGLE_CLIENT_ID=your_production_client_id
 ```
+🌐 Web Scraper Application
+A modern ReactJS app with Google OAuth 2.0 authentication that enables ethical web scraping of news, quotes, weather, and general content. Built with responsive design and data visualization features.
 
+Features
+OAuth Authentication: Google sign-in, session management, protected routes, user profile display
+
+Web Scraping: Multi-format support, respects robots.txt, rate limiting, error handling
+
+Data Display: Responsive card layout, real-time updates, filterable by content type
+
+UI: Modern design with gradients, glassmorphism, smooth animations, mobile-first
+
+Security: Secure JWT handling, CORS, input validation, rate limiting
+
+Quick Start
+Prerequisites
+Node.js v14+, Python 3.8+, npm or yarn
+
+Installation
+Clone repo
+
+bash
+git clone <repo-url>
+cd web-scraper-app
+Install frontend dependencies
+
+bash
+npm install
+Install backend dependencies
+
+bash
+cd server
+pip install -r requirements.txt
+cd ..
+Configure Google OAuth Client ID in .env and in src/index.js
+
+Start servers
+
+bash
+npm run server
+or separately:
+
+bash
+npm start       # frontend  
+cd server
+python app.py   # backend
+Access app at http://localhost:3000
+
+Project Structure
+text
+src/
+ ├── components/    # React components (Header, Login, ScrapingForm, etc.)
+ ├── App.js         # Main app with routing and auth
+ ├── index.js       # App entry
+server/
+ ├── app.py         # Flask backend server
+ └── requirements.txt
+Deployment
+Frontend: Build and deploy with Netlify, Vercel, or GitHub Pages
+
+Backend: Deploy with Heroku, Railway, or similar
+
+License
+MIT License
+
+Built with ❤️ by Vivek Shingne using React and Python Flask
 ## 🧪 Testing
 
 ### Frontend Testing
